@@ -1,5 +1,6 @@
 import React from 'react';
 import LargeCard from './LargeCard';
+import MediumCard from './MediumCard';
 
 import '../assets/styles/Highlights.scss';
 
@@ -9,8 +10,8 @@ const Highlights = () => (
     <div className="highlights__cards">
       <LargeCard />
       <LargeCard />
-      <LargeCard />
-      <LargeCard />
+      <MediumCard />
+      <MediumCard />
     </div>
   </div>
 );
