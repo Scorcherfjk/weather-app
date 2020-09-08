@@ -1,3 +1,19 @@
-#app {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  margin: 0;
+  color: #e7e7eb;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 720px) {
+  .app {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
 }
