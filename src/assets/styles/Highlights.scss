@@ -1,0 +1,22 @@
+.highlights {
+  width: 100%;
+}
+
+.highlights__title {
+  line-height: 28px;
+}
+
+.highlights__cards {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+@media (min-width: 720px) {
+  .highlights__cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
