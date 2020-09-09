@@ -5,11 +5,13 @@
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  padding: 18px 10px;
 }
 
 .small-card__date {
+  margin: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -23,8 +25,21 @@
 
 .small-card__list {
   width: 100%;
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+
+.small-card__list li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.small-card__list li:last-child {
+  color: #A09FB1;
 }
