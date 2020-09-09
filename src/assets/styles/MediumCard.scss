@@ -9,6 +9,26 @@
   align-items: center;
 }
 
+.medium-card__title{
+  margin: 10px;
+}
+
+.medium-card__detail {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.medium-card__detail span{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 75px;
+  text-align: center;
+}
+
 @media (min-width: 720px) {
   .medium-card {
     width: 350px;
