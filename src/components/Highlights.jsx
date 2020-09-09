@@ -4,13 +4,7 @@ import MediumCard from './MediumCard';
 
 import '../assets/styles/Highlights.scss';
 
-const Highlights = () => {
-  const token = '86d376975595fd9beeaa42e97b417da7';
-  const [ip, setIp] = useState('');
-  const [geo, setGeo] = useState({
-    latitude: 0,
-    longitude: 0,
-  });
+const Highlights = ({ lat, lon, token }) => {
   const [weather, setWeather] = useState({
     visibility: 0,
     wind: {
@@ -25,16 +19,8 @@ const Highlights = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const resIp = await fetch('https://api.ipify.org/?format=json');
-      const dataIp = await resIp.json();
-      setIp(dataIp.ip);
-
-      const resGeo = await fetch(`https://ipapi.co/${ip}/json/`);
-      const dataGeo = await resGeo.json();
-      setGeo(dataGeo);
-
       const resWeather = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${geo.latitude}&lon=${geo.longitude}&appid=${token}`,
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${token}`,
       );
       const dataWeather = await resWeather.json();
       setWeather(dataWeather);
