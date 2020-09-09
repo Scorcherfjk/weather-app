@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LargeCard from './LargeCard';
 import MediumCard from './MediumCard';
 import ProgressBar from './ProgressBar';
+import Arrow from './Arrow';
 
 import '../assets/styles/Highlights.scss';
 
@@ -34,7 +35,7 @@ const Highlights = ({ lat, lon, token }) => {
       <h2 className="highlights__title">Today’s Highlights</h2>
       <div className="highlights__cards">
         <LargeCard title="Wind status" detail={weather.wind.speed} metric="mps">
-          {weather.wind.deg}
+          <Arrow rotate={weather.wind.deg} />
         </LargeCard>
         <LargeCard title="Humidity" detail={weather.main.humidity} metric="%">
           <ProgressBar progress={weather.main.humidity} />

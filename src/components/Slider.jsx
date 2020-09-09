@@ -34,8 +34,6 @@ const Slider = ({ lat, lon, token }) => {
         return exists;
       });
 
-      console.log(temp);
-
       setWeather(temp);
     };
     getData();
@@ -43,9 +41,9 @@ const Slider = ({ lat, lon, token }) => {
 
   return (
     <div className="slider">
-      {weather.map((ele, idx) => (
+      {weather.map((ele) => (
         <SmallCard
-          key={'date' + idx}
+          key={ele.id}
           img={Ejm}
           date={ele.dt_txt}
           min={ele.main.temp_min}
