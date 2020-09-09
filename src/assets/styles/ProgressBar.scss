@@ -1,0 +1,40 @@
+.progressbar {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #a09fb1;
+  width: 229px;
+}
+
+.progressbar li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressbar li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.progressbar__progress-container {
+  background-color: #E7E7EB;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+}
+
+.progressbar__progress-value {
+  height: 10px;
+  background-color: #FFEC65;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.progressbar p {
+  text-align: end;
+  margin: 0;
+}
